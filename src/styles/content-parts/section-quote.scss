@@ -1,0 +1,61 @@
+//Section-quote
+.section-quote {
+    color: $quote-text-color;
+    font-weight: 700;
+
+    .img-holder {
+        @extend %card;
+
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 15px;
+        }
+    }
+
+    blockquote {
+        margin-bottom: 10px;
+
+        @include media-breakpoint-up(md) {
+            margin: 0 25px 10px 72px;
+            position: relative;
+        }
+
+        p {
+            line-height: 1.2;
+            letter-spacing: -.04em;
+            margin-bottom: 26px;
+            color: inherit;
+            font-size: (22/18)+em;
+        }
+
+        .title {
+            font-size: (32/18)+em;
+            letter-spacing: .015em;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            letter-spacing: -.04em;
+            color: inherit;
+            font-size: 15px;
+        }
+
+        &:before {
+
+            @include media-breakpoint-up(md) {
+                content: '“';
+                position: absolute;
+                font: 700 100px / 1 pictograph;
+                top: -49px;
+                left: -78px;
+                color: $primary;
+            }
+        }
+    }
+
+    .quote-cont {
+
+        .photo {
+            max-width: 100%;
+        }
+    }
+}

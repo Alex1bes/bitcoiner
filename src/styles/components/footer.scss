@@ -1,0 +1,47 @@
+.footer {
+    background: $footer-bg;
+    padding: 55px 0;
+    color: $footer-text-color;
+
+    @include media-breakpoint-down(xs) {
+        font-size: 10px;
+    }
+
+    .follow-us {
+
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .title {
+        color: $footer-title-color;
+        font-size: (20/18)+em;
+        letter-spacing: -.02em;
+    }
+
+    img {
+
+        @include media-breakpoint-down(xs) {
+            height: 25px;
+        }
+    }
+
+    .social-list {
+        @extend %clear-list;
+
+        a {
+            font-size: (30/18)+em;
+            margin-right: 20px;
+        }
+    }
+
+    .copyright {
+        color: inherit;
+        font-size: (16/18)+em;
+
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 20px;
+        }
+    }
+}

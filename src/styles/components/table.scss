@@ -1,0 +1,58 @@
+.table-holder {
+    margin-bottom: 16px;
+
+    @include media-breakpoint-down(md) {
+        overflow-x: scroll;
+    }
+
+    .table {
+        width: 100%;
+        font-size: (14/18)+em;
+
+        tr {
+
+            &:not(:last-child) {
+
+                th, 
+                td {
+                    border-bottom: 1px solid $table-border-color;
+                }
+            }
+        }
+
+        th, 
+        td {
+            padding: 18px 0;
+            
+            @include media-breakpoint-down(sm) {
+                white-space: nowrap;
+            }
+        }
+
+        th {
+            padding-right: 3px;
+            font-size: (20/14)+em;
+
+            @include media-breakpoint-up(lg) {
+                width: 42%;
+                padding-left: 21px;
+            }
+        }
+
+        td {
+            padding-right: $table-padding-x;
+            padding-left: $table-padding-x;
+
+            &:nth-child(2) {
+
+                @include media-breakpoint-up(lg) {
+                    width: 26%;
+                }
+            }
+
+            &:last-child {
+                font-size: (16/14)+em;
+            }
+        }
+    }
+}

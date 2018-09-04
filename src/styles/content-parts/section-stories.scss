@@ -1,0 +1,29 @@
+//Section-stories
+.section-stories {
+
+    .person-holder {
+
+        @include media-breakpoint-up(lg) {
+            padding-bottom: 34px;
+        }
+    }
+
+    .person {
+
+        @include media-breakpoint-down(xs) {
+            margin-bottom: 25px;
+        }
+    }
+
+    .card-img-top {
+        margin-bottom: 22px;
+    }
+
+    .title {
+        color: $stories-title-color;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+}

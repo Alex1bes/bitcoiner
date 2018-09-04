@@ -1,0 +1,34 @@
+body {
+    width: 100%;
+    min-width: 320px;
+    min-height: 100%;
+
+    @include media-breakpoint-down(md) {
+        font-size: 14px;
+    }
+}
+
+.container {
+    max-width: $container-max-width;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+@each $row in $row-sizes {
+
+    .row-#{$row} {
+        @include custom-row($row*1px);
+    }
+
+    @each $breakpoint in map-keys($grid-breakpoints) {
+        @include media-breakpoint-up($breakpoint) {
+            $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+            .row#{$infix}-#{$row} {
+                @include custom-row($row*1px);
+            }
+        }
+    }
+}

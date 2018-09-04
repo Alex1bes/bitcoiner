@@ -1,0 +1,49 @@
+.section-jumbo {
+    color: $jumbo-color;
+
+    .jumbotron {
+        background: $jumbo-bg;
+        height: 350px;
+
+        @include media-breakpoint-up(lg) {
+            height: 600px;
+        }
+    }
+
+    .jumbo-title-holder {
+        max-width: 700px;
+        padding: 15px;
+
+        * {
+            text-shadow: 0 0 50px $white;
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: 14px;
+            max-width: 500px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding: 0 $inner-gap;
+        }
+
+        .title {
+            margin-bottom: 10px;
+
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 38px;
+            }
+        }
+
+        p {
+            margin-bottom: 10px;
+            font-size: (24/18)+em;
+            line-height: 1.3;
+        }
+    }
+
+    .timer {
+        font-size: (70/18)+em;
+        font-weight: 700;
+    }
+}

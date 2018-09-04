@@ -1,0 +1,90 @@
+*:focus {
+    outline: none;
+}
+
+//for FireFox
+::-moz-focus-inner, 
+::-moz-focus-outer {
+    border: 0;
+    outline: none;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+h1 {
+    font-size: (60/18)+em;
+    line-height: 1;
+
+    small {
+        font-size: 50%;
+    }
+}
+
+h2 {
+    font-size: (30/18)+em;
+}
+
+h3 {
+    font-size: (20/18)+em;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+section {
+    margin-bottom: 30px;
+
+    @include media-breakpoint-up(md) {
+        margin-bottom: 72px;
+    }
+}
+
+.section-title {
+    padding-bottom: 46px;
+    color: $primary;
+}
+
+a:not(.btn) {
+    text-decoration: none;
+    transition: all .3s ease-out;
+    
+    &:focus,
+    &:active,
+    &:hover {
+        text-decoration: none;
+        transition: all .3s ease-in;
+        opacity: .75;
+    }
+}
+
+%link-more {
+    color: $primary;
+}
+
+%clear-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    a {
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+%card {
+    padding: $inner-gap-mobile;
+    background: $card-bg;
+    border: 1px solid $card-border-color;
+
+    @include media-breakpoint-up(lg) {
+        padding: $inner-gap;
+    }
+}

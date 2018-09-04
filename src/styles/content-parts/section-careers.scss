@@ -1,0 +1,14 @@
+//Section-careers
+.section-careers {
+
+    .careers-holder {
+
+        @include media-breakpoint-up(md) {
+            background: url($path-images + 'map.png') no-repeat top 100px center;
+        }
+    }
+    
+    .search-cont {
+        margin-bottom: 17px;
+    }
+}

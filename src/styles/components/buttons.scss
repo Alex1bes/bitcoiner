@@ -1,0 +1,21 @@
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.btn {
+    padding: 12px 15px;
+    min-width: 260px;
+    line-height: 1.2;
+    border-radius: 0;
+}
+
+.btn-md {
+    font-size: (24/18)+em;
+    line-height: 1;
+}
