@@ -39,26 +39,7 @@
 
     </div>
 
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/jquery.countdown.js"></script>
-    <script>
-    //Timer
-    var fiveSeconds = new Date().getTime() + 15500000;
-    $('#timer').countdown(fiveSeconds, {elapse: true})
-    .on('update.countdown', function(event) {
-      var $this = $(this);
-      if (event.elapsed) {
-        $this.html(
-            window.open('index.html', '_self')
-        );
-      } else {
-        $this.html(event.strftime('%H:%M:%S'));
-      }
-    });
-
-
-
-    </script>
+    <script src="assets/js/app.js"></script>
     
 </body>
 
