@@ -1,8 +1,6 @@
 //= ../../node_modules/jquery/dist/jquery.min.js
 //= ../../node_modules/jquery.countdown/jquery.countdown.js
 
-$(document).ready(function() {
-
     //Timer
     var fiveSeconds = new Date().getTime() + 15500000;
     $('#timer').countdown(fiveSeconds, {elapse: true})
@@ -17,11 +15,14 @@ $(document).ready(function() {
         }
     });
 
+$(document).ready(function() {
+
+
     //Form
     $("#form").submit(function() {
         $.ajax({
             type: "POST",
-            url: "../mail.php",
+            url: "mail.php",
             data: $(this).serialize()
         }).done(function() {
             $(this).find("input").val("");
