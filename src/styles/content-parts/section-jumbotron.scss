@@ -12,6 +12,7 @@
 
     .jumbo-title-holder {
         max-width: 700px;
+        // width: 100%;
         padding: 15px;
 
         * {
@@ -42,8 +43,22 @@
         }
     }
 
-    .timer {
-        font-size: (70/18)+em;
-        font-weight: 700;
+    .timer-element {
+
+        * {
+
+            @include media-breakpoint-down(sm) {
+                font-size: 20px!important;
+            }
+        }
+    }
+
+    #timer4975700b4985eec21c20f735bf122bec {
+        margin-bottom: 15px;
+        min-width: 300px!important;
+
+        @include media-breakpoint-down(sm) {
+            height: 45px!important;
+        }
     }
 }

@@ -31,59 +31,49 @@
                         <div class="jumbo-title-holder">
                             <h1 class="title">Сувенирная монета Bitcoin</h1>
                             <p>
-                                Самая лучшая копия монеты Bitcoin всего за <b>50грн</b><br>
+                                Самая лучшая цена за монету Bitcoin<br>
                                 Поспешите, до конца акции осталось: 
                             </p>
-                            <div id="timer" class="timer"></div>
-                            <a href="#" class="btn btn-dark btn-md">Купить монету</a>
+                            <script src="assets/js/timer.js"></script>
+                            <a href="#form" class="btn btn-dark btn-md">Купить монету</a>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="section-cards">
                 <div class="container">
-            
                     <div class="row">
             
-                        <div class="col-md-4 d-md-flex">
-                            <div class="card d-flex flex-row flex-md-column-reverse justify-content-end align-items-center">
+                        <div class="col-sm-4 d-md-flex">
+                            <a href="#form" class="card d-flex flex-row flex-sm-column-reverse justify-content-between justify-content-sm-end align-items-center">
+                                <div class="card-footer">Купить монету</div>
                                 
-                                <a href="#" class="d-flex justify-content-center align-items-center card-pic">
+                                <div class="d-flex justify-content-center align-items-center card-pic">
                                     <img class="card-img-top" src="images/1.jpg" alt="Card image cap">
-                                </a>
-            
-                                <a href="#" class="d-none d-lg-block card-footer">Купить монету</a>
-                            </div>
+                                </div>
+                            </a>
                         </div>
             
-                        <div class="col-md-4 d-md-flex">
-                            <div class="card d-flex flex-row flex-md-column-reverse justify-content-end align-items-center">
+                        <div class="col-sm-4 d-md-flex">
+                            <a href="#form" class="card d-flex flex-row flex-sm-column-reverse justify-content-between justify-content-sm-end align-items-center">
+                                <div class="card-footer">Купить монету</div>
                                 
-                                <a href="#" class="d-flex justify-content-center align-items-center card-pic">
-                                    <img class="card-img-top" src="images/2.jpg" alt="Card image cap">
-                                </a>
-            
-                                <a href="#" class="d-none d-lg-block card-footer">Купить монету</a>
-                            </div>
+                                <div class="d-flex justify-content-center align-items-center card-pic">
+                                    <img class="card-img-top" src="images/mon-1.jpg" alt="Card image cap">
+                                </div>
+                            </a>
                         </div>
             
-                        <div class="col-md-4 d-md-flex">
-                            <div class="card d-flex flex-row flex-md-column-reverse justify-content-end align-items-center">
-            
-                                <a href="#" class="d-flex justify-content-center align-items-center card-pic">
-                                    <img class="card-img-top" src="images/3.jpg" alt="Card image cap">
-                                </a>
-            
-                                <a href="#" class="d-none d-lg-block card-footer">Купить монету</a>
-                            </div>
+                        <div class="col-sm-4 d-md-flex">
+                            <a href="#form" class="card d-flex flex-row flex-sm-column-reverse justify-content-between justify-content-sm-end align-items-center">
+                                <div class="card-footer">Купить монету</div>
+                                
+                                <div class="d-flex justify-content-center align-items-center card-pic">
+                                    <img class="card-img-top" src="images/mon-2.jpg" alt="Card image cap">
+                                </div>
+                            </a>
                         </div>
             
-                        <div class="col-sm-12">
-                            <div class="card-block">
-                                <h3 class="card-title">Монета Биткоин Bitcoin Litecoin Etherium Лайткоин Эфириум</h3>
-                                <p class="card-text">Сувенирная монета Биткоин. Материал: метал с серебряным покрытием.</p>
-                            </div>
-                        </div>
             
                     </div>
                 </div>
@@ -147,7 +137,12 @@
             
                         <div class="form-group">
                             <label for="phone">Ваш телефон</label>
-                            <input type="text" name="phone" class="form-control" id="phone" placeholder="Ваш телефон" required>
+                            <input type="text" name="phone" class="form-control" id="phone" placeholder="Введите Ваш телефон" required>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="phone">Колличество монет</label>
+                            <input type="number" name="number" class="form-control" id="number" placeholder="Введите колличество монет" required>
                         </div>
             
                         <button type="submit" class="btn btn-primary">Отправить</button>
@@ -159,25 +154,16 @@
         </main>
 
         <footer class="footer">
-            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center align-items-md-end">
-                
-                <div class="follow-us">
-                    <h3 class="title">Follow Us</h3>
-                    <ul class="social-list d-flex">
-                        <li><a href="#" class="fa fa-facebook-square"></a></li>
-                        <li><a href="#" class="fa fa-pinterest text-danger"></a></li>
-                    </ul>
+            <div class="container text-center">
+                <div class="contacts">
+                    Контактный телефон: <a href="tel:090 000 00 00">090 000 00 00</a><br>
+                    <i>Елена</i>
                 </div>
-        
-                <div class="copyright">© 1998 — 2018 Costco Wholesale Corporation. All rights reserved.</div>
-        
-                <a class="footer-logo" href="https://enterprisealumni.com/" target="_blank"><img src="images/alumni-logo.png" alt="Alumni"></a>
-        
+                <div class="copyright">© Bitcoiner. Все права защищены.</div>
             </div>
         </footer>
 
     </div>
-    
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="assets/js/app.js"></script>
     

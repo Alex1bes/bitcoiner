@@ -19,8 +19,8 @@ h1 {
     font-size: (60/18)+em;
     line-height: 1;
 
-    small {
-        font-size: 50%;
+    @include media-breakpoint-down(xs) {
+        font-size: 30px;
     }
 }
 
@@ -64,6 +64,7 @@ a:not(.btn) {
 
 %link-more {
     color: $primary;
+    font-size: (25/16)+em;
 }
 
 %clear-list {
