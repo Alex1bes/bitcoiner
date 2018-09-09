@@ -1,4 +1,5 @@
 //= ../../node_modules/jquery/dist/jquery.min.js
+
 $(document).ready(function() {
     //Form
     $("#form").submit(function() {
