@@ -53,12 +53,19 @@
         }
     }
 
-    #timer4975700b4985eec21c20f735bf122bec {
+    #timer6e522dc316d5986154807fd3002b1b23 {
         margin-bottom: 15px;
         min-width: 300px!important;
 
         @include media-breakpoint-down(sm) {
             height: 45px!important;
+        }
+    }
+
+    .timer-separator {
+
+        @include media-breakpoint-down(sm) {
+            padding: 0px 10px!important;
         }
     }
 }

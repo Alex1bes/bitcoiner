@@ -20,7 +20,7 @@
 
         @include media-breakpoint-down(xs) {
             overflow: hidden;
-            max-height: 120px;
+            max-height: 90px;
         }
 
         @include media-breakpoint-up(sm) {

@@ -6,6 +6,13 @@ body {
     @include media-breakpoint-down(md) {
         font-size: 14px;
     }
+
+    >* {
+
+        &:last-child {
+            z-index: -9999!important;
+        }
+    }
 }
 
 .container {
