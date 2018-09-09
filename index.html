@@ -14,6 +14,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="images/favicon/mstile-150x150.png">
     <meta name="theme-color" content="#ffffff">
+    <link rel='stylesheet' href='https://apimgmtstorelinmtekiynqw.blob.core.windows.net/content/MediaLibrary/Widget/Map/styles/map.css' />
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
 
@@ -79,9 +80,6 @@
                     </div>
                 </div>
             </section>
-            <!-- //= content-parts/section-news.html. -->
-            <!-- //= content-parts/section-careers.html -->
-            <!-- //= content-parts/section-quote.html -->
             <section class="section-stories">
                 <div class="container">
                         
@@ -131,22 +129,34 @@
                     <h2 class="section-title">Заказать прямо сейчас</h2>
             
                     <form id="form">
-                        <div class="form-group">
-                            <label for="name">Ваше Имя</label>
-                            <input type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Введите Ваше Имя" required>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="name">Ваше Имя</label>
+                                <input type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Введите Ваше Имя" required>
+                            </div>
+            
+                            <div class="col-sm-6 form-group">
+                                <label for="phone">Ваш телефон</label>
+                                <input type="text" name="phone" class="form-control" id="phone" placeholder="Введите Ваш телефон" required>
+                            </div>
                         </div>
             
-                        <div class="form-group">
-                            <label for="phone">Ваш телефон</label>
-                            <input type="text" name="phone" class="form-control" id="phone" placeholder="Введите Ваш телефон" required>
-                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="phone">Колличество монет</label>
+                                <input type="number" name="number" class="form-control" id="number" placeholder="Введите колличество монет" required>
+                            </div>
             
-                        <div class="form-group">
-                            <label for="phone">Колличество монет</label>
-                            <input type="number" name="number" class="form-control" id="number" placeholder="Введите колличество монет" required>
+                            <div class="col-sm-6 form-group">
+                                <label for="address">Адрес доставки</label>
+                                <input type="text" name="address" class="form-control mb-2" id="address" placeholder="Введите адрес доставки" required>
+                                <div id="np-map"> <button type="button" id="npw-map-open-button">БЛИЖАЙШЕЕ ОТДЕЛЕНИЕ</button> <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPhm7Q29X5ldwjLtA7IMYHU_0xATiWK3A&amp;language=ru"></script> </div>
+                            </div>
                         </div>
-            
-                        <button type="submit" class="btn btn-primary">Отправить</button>
+                        
+                        <div class="d-sm-flex justify-content-end">
+                            <button type="submit" class="btn btn-primary">Отправить</button>
+                        </div>
                     </form>
             
                 </div>
@@ -166,6 +176,7 @@
 
     </div>
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type='text/javascript' id='map' charset='utf-8' data-lang='ua' apiKey='ec0b847d67f56e5af631db8c32b28519' data-town='undefined' data-town-name='undefined' data-town-id='undefined' src='https://apimgmtstorelinmtekiynqw.blob.core.windows.net/content/MediaLibrary/Widget/Map/dist/map.min.js'></script>
     <script src="assets/js/app.js"></script>
     
 </body>
